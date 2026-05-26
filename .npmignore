@@ -1,0 +1,11 @@
+src/
+examples/
+docs/
+assets/
+.github/
+*.config.ts
+tsconfig.json
+CONTRIBUTING.md
+SECURITY.md
+CODE_OF_CONDUCT.md
+.editorconfig

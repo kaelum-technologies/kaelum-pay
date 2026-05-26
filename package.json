@@ -1,0 +1,66 @@
+{
+  "name": "@kaelum/pay",
+  "version": "0.1.0",
+  "description": "Official KAELUM Pay SDK. Accept KLM, the Ai-governed closed-loop digital commerce currency, as a payment option on any website or app.",
+  "license": "MIT",
+  "author": "Kaelum Technologies Ltd <info@kaelumtechnologies.com>",
+  "homepage": "https://kaelum.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaelum-technologies/kaelum-pay.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kaelum-technologies/kaelum-pay/issues"
+  },
+  "keywords": [
+    "kaelum",
+    "kaelum-pay",
+    "klm",
+    "payments",
+    "commerce-currency",
+    "checkout",
+    "sdk"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./checkout": {
+      "types": "./dist/checkout.d.ts",
+      "import": "./dist/checkout.js",
+      "require": "./dist/checkout.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
