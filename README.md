@@ -2,8 +2,7 @@
   <img src="./assets/kaelum-logo.png" alt="KAELUM" width="120" />
 </p>
 
-[![npm](https://img.shields.io/npm/v/@kaelum/pay.svg)]
-(https://www.npmjs.com/package/@kaelum/pay)
+[![npm](https://img.shields.io/npm/v/@kaelum/pay.svg)](https://www.npmjs.com/package/@kaelum/pay)
 
 <h1 align="center">KAELUM Pay SDK</h1>
 
