@@ -1,7 +1,7 @@
 /**
  * @kaelum/pay
  *
- * Official SDK for KAELUM Pay. Accept KLM, the Ai-governed closed-loop
+ * Official SDK for KAELUM Pay. Accept KAE, the Ai-governed closed-loop
  * digital commerce currency, as a payment option on any website or app.
  *
  * Server-side entry point. For the browser checkout widget, import from

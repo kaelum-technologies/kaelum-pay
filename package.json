@@ -1,7 +1,7 @@
 {
   "name": "@kaelum/pay",
   "version": "0.1.0",
-  "description": "Official KAELUM Pay SDK. Accept KLM, the Ai-governed closed-loop digital commerce currency, as a payment option on any website or app.",
+  "description": "Official KAELUM Pay SDK. Accept KAE, the Ai-governed closed-loop digital commerce currency, as a payment option on any website or app.",
   "license": "MIT",
   "author": "Kaelum Technologies Ltd <info@kaelumtechnologies.com>",
   "homepage": "https://kaelum.app",
@@ -15,7 +15,7 @@
   "keywords": [
     "kaelum",
     "kaelum-pay",
-    "klm",
+    "kae",
     "payments",
     "commerce-currency",
     "checkout",

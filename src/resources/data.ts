@@ -1,5 +1,5 @@
 /**
- * Read-only KAELUM resources: KLM price, account balances, the merchant
+ * Read-only KAELUM resources: KAE price, account balances, the merchant
  * directory, developer keys, and K.A.T.E. engine status.
  */
 
@@ -13,11 +13,11 @@ import type {
   Merchant,
 } from "../types.js";
 
-/** The current KLM price, governed by the K.A.T.E. engine. */
+/** The current KAE price. KAE is a fixed-price commerce currency and does not appreciate. */
 export class Klm {
   constructor(private readonly transport: McpTransport) {}
 
-  /** Retrieve the current KLM price. */
+  /** Retrieve the current KAE price. */
   async price(): Promise<KlmPrice> {
     const raw = await this.transport.call("kaelum_get_klm_price", {});
     return {
@@ -57,7 +57,7 @@ export class Merchants {
   constructor(private readonly transport: McpTransport) {}
 
   /**
-   * List merchants and creators that can receive KLM payments.
+   * List merchants and creators that can receive KAE payments.
    *
    * @param query - Optional keyword to filter the directory.
    */

@@ -1,7 +1,7 @@
 /**
  * Pay links: fixed-amount hosted checkout pages.
  *
- * A pay link is the simplest way to accept KLM. Create one server-side,
+ * A pay link is the simplest way to accept KAE. Create one server-side,
  * then either redirect the customer to {@link Paylink.url} or render the
  * embedded checkout widget against it. See `docs/checkout.md`.
  */
@@ -22,7 +22,7 @@ export class Paylinks {
    *
    * The returned {@link Paylink.url} is a hosted checkout page. Redirect a
    * customer to it, or pass it to the embedded checkout widget. Customers
-   * receive the standard 6%+ KLM spending discount automatically.
+   * receive the standard 6%+ KAE spending discount automatically.
    *
    * @example
    * ```ts

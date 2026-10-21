@@ -32,7 +32,7 @@ The SDK is built to tolerate variation here, using multi-key field lookups,
 but you should confirm these against a live call before launch.
 
 1. **Response field names inside `data`.** For pay links, payments,
-   balances, the KLM price, merchants, and developer keys, the SDK reads
+   balances, the KAE price, merchants, and developer keys, the SDK reads
    several candidate field names (for example both `amountGbp` and
    `amount_gbp`). Make one real call for each resource and confirm the
    returned objects are populated. If a field comes back empty, add the

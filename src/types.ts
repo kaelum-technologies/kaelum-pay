@@ -6,7 +6,7 @@
  * See INTEGRATION_NOTES.md for the confirmed-versus-expected breakdown.
  */
 
-/** Lifecycle status of a KLM payment transaction. */
+/** Lifecycle status of a KAE payment transaction. */
 export type PaymentStatus =
   | "PENDING"
   | "CONFIRMED"
@@ -86,15 +86,15 @@ export interface PaylinkListParams {
   limit?: number;
 }
 
-/** A KLM payment transaction between a customer and a merchant or creator. */
+/** A KAE payment transaction between a customer and a merchant or creator. */
 export interface PaymentTransaction {
   /** Unique transaction identifier. */
   transactionId: string;
   /** Current lifecycle status. */
   status: PaymentStatus;
-  /** Amount of KLM moved by this transaction. */
+  /** Amount of KAE moved by this transaction. */
   amountKlm: number;
-  /** GBP equivalent of the KLM amount at transaction time. */
+  /** GBP equivalent of the KAE amount at transaction time. */
   amountGbp?: number;
   /** Account ID of the merchant or creator being paid. */
   merchantId: string;
@@ -122,7 +122,7 @@ export interface AuthenticateParams {
 
 /** Parameters for {@link Payments.initiate}. */
 export interface PaymentInitiateParams {
-  /** Amount of KLM to send. Minimum 1. */
+  /** Amount of KAE to send. Minimum 1. */
   amountKlm: number;
   /** Account ID of the merchant or creator to pay. */
   merchantId: string;
@@ -132,9 +132,9 @@ export interface PaymentInitiateParams {
   reference?: string;
 }
 
-/** The current KLM price, governed by the K.A.T.E. engine. */
+/** The current KAE price. KAE is a fixed-price commerce currency and does not appreciate. */
 export interface KlmPrice {
-  /** Current price of one KLM, in GBP. */
+  /** Current price of one KAE, in GBP. */
   priceGbp: number;
   /** Currency code for the quoted price. */
   currency?: string;
@@ -146,9 +146,9 @@ export interface KlmPrice {
 export interface AccountBalance {
   /** The account number or user ID this balance belongs to. */
   userId: string;
-  /** KLM balance held by the account. */
+  /** KAE balance held by the account. */
   balanceKlm: number;
-  /** GBP equivalent of the KLM balance. */
+  /** GBP equivalent of the KAE balance. */
   balanceGbp?: number;
   /** Account tier (for example Customer, Creator, Merchant). */
   tier?: string;
@@ -156,7 +156,7 @@ export interface AccountBalance {
   status?: string;
 }
 
-/** A merchant or creator that can receive KLM payments. */
+/** A merchant or creator that can receive KAE payments. */
 export interface Merchant {
   /** Account ID used as the `merchantId` when initiating a payment. */
   id: string;

@@ -24,7 +24,7 @@
  * ```
  */
 
-/** A KLM payment result reported by the hosted checkout page. */
+/** A KAE payment result reported by the hosted checkout page. */
 export interface CheckoutPaymentResult {
   /** Transaction identifier, when supplied by the checkout page. */
   transactionId?: string;

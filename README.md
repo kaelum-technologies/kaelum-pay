@@ -7,7 +7,7 @@
 <h1 align="center">KAELUM Pay SDK</h1>
 
 <p align="center">
-  Accept KLM, the Ai-governed closed-loop digital commerce currency, as a payment option on any website or app.
+  Accept KAE, the Ai-governed closed-loop digital commerce currency, as a payment option on any website or app.
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@
 
 ## What this is
 
-`@kaelum/pay` is the official SDK for KAELUM Pay. It lets a business, merchant, or creator take payment in KLM with a few lines of code. KLM is a closed-loop digital commerce currency governed by the K.A.T.E. (Kaelum Audivo Triovus Engine). It is not a cryptocurrency and there is no blockchain, no exchange, and no gas fee involved. Customers receive the standard 6%+ spending discount on goods and services when they pay with KLM.
+`@kaelum/pay` is the official SDK for KAELUM Pay. It lets a business, merchant, or creator take payment in KAE (formerly KLM) with a few lines of code. KAE is a closed-loop digital commerce currency governed by the K.A.T.E. (Kaelum Audivo Triovus Engine). It is not a cryptocurrency and there is no blockchain, no exchange, and no gas fee involved. Customers receive the standard 6%+ spending discount on goods and services when they pay with KAE (a 4.5% platform fee applies).
 
 The SDK is a typed wrapper around the live KAELUM MCP server. It ships with zero runtime dependencies, dual ESM and CommonJS builds, and full TypeScript types.
 
@@ -91,7 +91,7 @@ Or wire it up declaratively with a data attribute:
 
 ## Server-to-server payments
 
-The direct payment API moves KLM from a customer account to a merchant or creator account. The flow is two-step on purpose: a payment is initiated, the customer reviews it, then it is confirmed. A confirmed payment cannot be reversed.
+The direct payment API moves KAE from a customer account to a merchant or creator account. The flow is two-step on purpose: a payment is initiated, the customer reviews it, then it is confirmed. A confirmed payment cannot be reversed.
 
 ```ts
 const session = await kaelum.auth.authenticate({

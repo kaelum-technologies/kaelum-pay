@@ -14,7 +14,7 @@ import { Webhooks } from "./webhooks.js";
 import type { KaelumPayOptions } from "./types.js";
 
 /**
- * Accept KLM, the Ai-governed closed-loop digital commerce currency, as a
+ * Accept KAE, the Ai-governed closed-loop digital commerce currency, as a
  * payment option on any website or app.
  *
  * @example
@@ -35,9 +35,9 @@ export class KaelumPay {
   public readonly paylinks: Paylinks;
   /** Authenticate accounts for the server-to-server payment API. */
   public readonly auth: Auth;
-  /** Initiate, confirm, cancel, and check KLM payments. */
+  /** Initiate, confirm, cancel, and check KAE payments. */
   public readonly payments: Payments;
-  /** Retrieve the current KLM price. */
+  /** Retrieve the current KAE price. */
   public readonly klm: Klm;
   /** Retrieve KAELUM account balances. */
   public readonly balances: Balances;

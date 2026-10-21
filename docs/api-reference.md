@@ -84,7 +84,7 @@ const pending = await kaelum.payments.initiate({
 
 ### confirm(sessionToken, transactionId)
 
-Confirm and execute a pending payment. This transfers KLM and cannot be
+Confirm and execute a pending payment. This transfers KAE and cannot be
 reversed.
 
 ```ts
@@ -117,7 +117,7 @@ All three return a `PaymentTransaction`: `{ transactionId, status, amountKlm, am
 
 ### price()
 
-Retrieve the current KLM price.
+Retrieve the current KAE price.
 
 ```ts
 const { priceGbp } = await kaelum.klm.price();
@@ -145,7 +145,7 @@ Returns an `AccountBalance`: `{ userId, balanceKlm, balanceGbp?, tier?, status? 
 
 ### list(query?)
 
-List merchants and creators that can receive KLM payments.
+List merchants and creators that can receive KAE payments.
 
 ```ts
 const merchants = await kaelum.merchants.list("coffee");

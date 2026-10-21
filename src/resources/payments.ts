@@ -1,7 +1,7 @@
 /**
- * Server-to-server KLM payments.
+ * Server-to-server KAE payments.
  *
- * This is the direct payment API. It moves KLM from a customer account to
+ * This is the direct payment API. It moves KAE from a customer account to
  * a merchant or creator account. Use it when you are building an agent, a
  * point-of-sale flow, or any integration that holds a customer session.
  *
@@ -62,12 +62,12 @@ export class Auth {
   }
 }
 
-/** Initiate, confirm, cancel, and check KLM payments. */
+/** Initiate, confirm, cancel, and check KAE payments. */
 export class Payments {
   constructor(private readonly transport: McpTransport) {}
 
   /**
-   * Initiate a KLM payment. Returns a PENDING transaction with full
+   * Initiate a KAE payment. Returns a PENDING transaction with full
    * details. Always present those details to the customer and require
    * explicit confirmation before calling {@link Payments.confirm}.
    */
@@ -93,7 +93,7 @@ export class Payments {
 
   /**
    * Confirm and execute a previously initiated payment.
-   * This transfers KLM and cannot be reversed.
+   * This transfers KAE and cannot be reversed.
    */
   async confirm(sessionToken: string, transactionId: string): Promise<PaymentTransaction> {
     requireToken(sessionToken);

@@ -1,6 +1,6 @@
 # Quickstart
 
-This guide takes you from an empty project to a working KLM checkout.
+This guide takes you from an empty project to a working KAE checkout.
 
 ## 1. Get your keys
 

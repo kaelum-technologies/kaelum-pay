@@ -3,6 +3,15 @@
 All notable changes to `@kaelum/pay` are documented here. This project
 follows [Semantic Versioning](https://semver.org).
 
+## [Unreleased]
+
+### Changed
+- The KAELUM commerce currency unit is now named KAE (formerly KLM). All
+  documentation, type descriptions and comments use KAE.
+- Method and field names that contain `klm` (for example `klm.price` and
+  `amountKlm`) are unchanged, so existing integrations keep working.
+  They refer to KAE.
+
 ## [0.1.0] - 2026-05-24
 
 Initial release.
